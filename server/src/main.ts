@@ -20,11 +20,11 @@ app
     console.info(`Server is listening on port ${port}`);
   })
   .on("error", (err: Error) => {
-  console.error("Error:", err.message);
+    console.error("Error:", err.message);
   });
 
-  const sayWelcome: RequestHandler = (req, res) => {
+const sayWelcome: RequestHandler = (req, res) => {
   res.send("Welcome to Wild Series !");
-  };
-  
-  app.get("/", sayWelcome);
+};
+
+app.get("/", sayWelcome);
