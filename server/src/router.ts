@@ -17,11 +17,11 @@ router.post("/api/items", itemActions.add);
 
 // Declaration of a "Welcome" route
 
-import sayActions from "./modules/say/sayActions";
 import programAction from "./modules/program/programAction";
+import sayActions from "./modules/say/sayActions";
 
 router.get("/", sayActions.sayWelcome);
-router.get("/api/programs", programAction.browse)
+router.get("/api/programs", programAction.browse);
 
 /* ************************************************************************* */
 

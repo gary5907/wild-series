@@ -20,14 +20,15 @@ import Programs from "./pages/programs";
 // Create router configuration with routes
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
-  { // The root path
+  {
+    // The root path
     element: <App />,
     children: [
       {
         path: "/programs",
-        element: <Programs />
-      }
-    ] // Renders the App component for the home page
+        element: <Programs />,
+      },
+    ], // Renders the App component for the home page
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
